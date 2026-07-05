@@ -1,15 +1,131 @@
+/*======================================
+            HEADER
+======================================*/
+
 const header = document.getElementById("header");
 
 window.addEventListener("scroll", () => {
 
-    if(window.scrollY > 100){
+    if (window.scrollY > 100) {
 
         header.classList.add("activo");
 
-    }else{
+    } else {
 
         header.classList.remove("activo");
 
     }
+
+});
+
+
+/*======================================
+        MODAL DE PRODUCCIONES
+======================================*/
+
+const cards = document.querySelectorAll(".card");
+
+const modal = document.getElementById("modalVideo");
+
+const video = document.getElementById("videoCompleto");
+
+const cerrar = document.querySelector(".cerrar-modal");
+
+cards.forEach(card => {
+
+    card.addEventListener("click", () => {
+
+        video.src = card.dataset.video;
+
+        video.muted = true; // Arranca sin sonido
+
+        modal.classList.add("activo");
+
+        document.body.style.overflow = "hidden";
+
+        video.play();
+
+    });
+
+});
+
+
+function cerrarModal() {
+
+    modal.classList.remove("activo");
+
+    video.pause();
+
+    video.currentTime = 0;
+
+    video.src = "";
+
+    document.body.style.overflow = "";
+
+}
+
+
+cerrar.addEventListener("click", cerrarModal);
+
+
+window.addEventListener("keydown", (e) => {
+
+    if (e.key === "Escape") {
+
+        cerrarModal();
+
+    }
+
+});
+
+
+modal.addEventListener("click", (e) => {
+
+    if (e.target === modal) {
+
+        cerrarModal();
+
+    }
+
+});
+
+
+/*======================================
+        MENÚ ACTIVO AL HACER SCROLL
+======================================*/
+
+const links = document.querySelectorAll("#header a");
+
+const secciones = document.querySelectorAll("main section");
+
+window.addEventListener("scroll", () => {
+
+    let actual = "";
+
+    secciones.forEach(seccion => {
+
+        const top = seccion.offsetTop - 150;
+
+        const alto = seccion.offsetHeight;
+
+        if (window.scrollY >= top && window.scrollY < top + alto) {
+
+            actual = seccion.getAttribute("id");
+
+        }
+
+    });
+
+    links.forEach(link => {
+
+        link.classList.remove("activo");
+
+        if (link.getAttribute("href") === "#" + actual) {
+
+            link.classList.add("activo");
+
+        }
+
+    });
 
 });

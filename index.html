@@ -17,13 +17,14 @@
 
 <body>
 
+    <!-- HEADER -->
     <header id="header">
 
         <nav>
 
             <div class="logo">
 
-                <img src="assets/img/logo.png" alt="POL Studio">
+                <img src="assets/img/logos/logo.png" alt="POL Studio">
 
             </div>
 
@@ -109,7 +110,7 @@
             </div>
 
         </section>
-
+        <!-- ABOUT -->
         <section id="about" class="about">
 
             <div class="about-container">
@@ -126,7 +127,7 @@
 
                     <h2>
 
-                        No capturamos momentos.
+                        No capturamos momentos.<br>
 
                         Creamos recuerdos.
 
@@ -134,16 +135,12 @@
 
                     <p>
 
-                        Cada proyecto comienza mucho antes de presionar REC.
+                        En POL Studio creemos que cada producción
+                        merece una mirada única.
 
-                        Observamos.
-
-                        Escuchamos.
-
-                        Pensamos.
-
-                        Porque creemos que cada historia merece una mirada única.
-
+                        Escuchamos cada idea, planificamos cada
+                        detalle y transformamos historias en
+                        imágenes que perduran en el tiempo.
                     </p>
 
                 </div>
@@ -151,7 +148,7 @@
             </div>
 
         </section>
-
+        <!-- PRODUCCIONES -->
         <section id="producciones" class="producciones">
 
             <div class="titulo-seccion">
@@ -164,11 +161,11 @@
 
             <div class="cards">
 
-                <article class="card">
+                <article class="card" data-video="assets/vid/full/naturaleza.webm">
 
-                    <video muted loop autoplay>
+                    <video autoplay muted loop playsinline>
 
-                        <source src="videos/naturaleza.mp4">
+                        <source src="assets/vid/preview/naturaleza.webm" type="video/webm">
 
                     </video>
 
@@ -176,35 +173,17 @@
 
                         <h3>Naturaleza</h3>
 
-                        <button>Ver producción</button>
+                        <button>Ver video →</button>
 
                     </div>
 
                 </article>
 
-                <article class="card">
+                <article class="card" data-video="assets/vid/full/evento.mp4">
 
-                    <video muted loop autoplay>
+                    <video autoplay muted loop playsinline>
 
-                        <source src="videos/urbano.mp4">
-
-                    </video>
-
-                    <div class="card-overlay">
-
-                        <h3>Urbano</h3>
-
-                        <button>Ver producción</button>
-
-                    </div>
-
-                </article>
-
-                <article class="card">
-
-                    <video muted loop autoplay>
-
-                        <source src="videos/eventos.mp4">
+                        <source src="assets/vid/preview/evento.mp4" type="video/mp4">
 
                     </video>
 
@@ -212,7 +191,25 @@
 
                         <h3>Eventos</h3>
 
-                        <button>Ver producción</button>
+                        <button>Ver video →</button>
+
+                    </div>
+
+                </article>
+
+                <article class="card" data-video="assets/vid/full/urbano.mp4">
+
+                    <video autoplay muted loop playsinline>
+
+                        <source src="assets/vid/preview/urbano.mp4" type="video/mp4">
+
+                    </video>
+
+                    <div class="card-overlay">
+
+                        <h3>Urbano</h3>
+
+                        <button>Ver video →</button>
 
                     </div>
 
@@ -223,6 +220,18 @@
         </section>
 
     </main>
+
+    <div class="modal-video" id="modalVideo">
+
+    <div class="modal-contenido">
+
+        <button class="cerrar-modal">&times;</button>
+
+        <video id="videoCompleto" controls playsinline></video>
+
+    </div>
+
+</div>
 
     <script src="js/script.js"></script>
 

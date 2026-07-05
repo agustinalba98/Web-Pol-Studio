@@ -22,11 +22,25 @@ ABOUT
 
 }
 
-.about-image img {
+.about-image{
 
-    width: 100%;
+    overflow:hidden;
 
-    border-radius: 18px;
+    border-radius:18px;
+
+}
+
+.about-image img{
+
+    width:100%;
+
+    transition:.6s ease;
+
+}
+
+.about-image:hover img{
+
+    transform:scale(1.05);
 
 }
 

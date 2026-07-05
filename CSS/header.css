@@ -120,6 +120,17 @@ nav a::after {
 
 }
 
+nav a.activo{
+
+    color: var(--color-gold);
+
+}
+
+nav a.activo::after{
+
+    width:100%;
+
+}
 
 
 nav a:hover::after {
