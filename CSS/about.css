@@ -1,0 +1,63 @@
+/*==========================
+ABOUT
+===========================*/
+
+.about {
+
+    padding: 150px 10%;
+
+    background: var(--color-background);
+
+}
+
+.about-container {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 90px;
+
+}
+
+.about-image img {
+
+    width: 100%;
+
+    border-radius: 18px;
+
+}
+
+.about-text span {
+
+    color: var(--color-gold);
+
+    letter-spacing: 4px;
+
+    font-size: .9rem;
+
+}
+
+.about-text h2 {
+
+    margin-top: 25px;
+
+    font-size: 3.5rem;
+
+    line-height: 1.2;
+
+    margin-bottom: 30px;
+
+}
+
+.about-text p {
+
+    color: var(--color-text-secondary);
+
+    line-height: 1.9;
+
+    font-size: 1.1rem;
+
+}

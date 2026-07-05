@@ -1,0 +1,18 @@
+:root{
+
+    --color-background:#050505;
+    --color-surface:#101010;
+
+    --color-text:#F5F5F5;
+    --color-text-secondary:#B0B0B0;
+
+    --color-gold:#C89B4D;
+    --color-gold-hover:#D8AC55;
+
+    --color-border:#2B2B2B;
+
+    --radius:18px;
+
+    --transition:.35s ease;
+
+}

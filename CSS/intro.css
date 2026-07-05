@@ -1,0 +1,71 @@
+/* ==========================
+        INTRO
+========================== */
+
+.intro {
+
+    min-height: 100vh;
+
+    background: #050505;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 120px 10%;
+
+}
+
+.intro-texto {
+
+    max-width: 900px;
+
+}
+
+.intro h2 {
+
+    font-size: 2.2rem;
+
+    color: #999;
+
+    text-transform: uppercase;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 25px;
+
+}
+
+.intro h3 {
+
+    font-size: 5rem;
+
+    line-height: 1.1;
+
+    color: white;
+
+}
+
+@keyframes scroll {
+
+    0% {
+
+        opacity: 1;
+
+        top: 8px;
+
+    }
+
+    100% {
+
+        opacity: 0;
+
+        top: 25px;
+
+    }
+
+}
