@@ -4,7 +4,7 @@
 
 .intro {
 
-    min-height: 100vh;
+    min-height: 50vh;
 
     background: #050505;
 
@@ -26,11 +26,11 @@
 
 }
 
-.intro h2 {
+.intro h1 {
 
     font-size: 2.2rem;
 
-    color: #999;
+    color: #979797;
 
     text-transform: uppercase;
 
@@ -38,6 +38,10 @@
 
     margin-bottom: 25px;
 
+}
+
+.intro h1 .highlight {
+    color: #c59a4a;
 }
 
 .intro h3 {

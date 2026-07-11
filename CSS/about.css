@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+
 /*==========================
 ABOUT
 ===========================*/
 
+ 
 .about {
 
     padding: 150px 10%;
@@ -45,16 +48,19 @@ ABOUT
 }
 
 .about-text span {
+    font-family: "Cormorant", serif;
 
     color: var(--color-gold);
 
     letter-spacing: 4px;
 
-    font-size: .9rem;
+    font-size: 1.6rem;
 
 }
 
 .about-text h2 {
+
+    font-family: "Cormorant", serif;
 
     margin-top: 25px;
 
@@ -68,10 +74,12 @@ ABOUT
 
 .about-text p {
 
+    font-family: "Cormorant", serif;
+
     color: var(--color-text-secondary);
 
     line-height: 1.9;
 
-    font-size: 1.1rem;
+    font-size: 1.6rem;
 
 }

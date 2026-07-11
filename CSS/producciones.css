@@ -24,7 +24,7 @@ PRODUCCIONES
 
     letter-spacing: 5px;
 
-    font-size: .9rem;
+    font-size: 2.5rem;
 
 }
 
@@ -143,4 +143,14 @@ PRODUCCIONES
 
     border-color: var(--color-gold);
 
+}
+
+.proceso {
+
+    
+
+}
+
+.proceso h4 {
+    color: var(--color-gold);
 }
