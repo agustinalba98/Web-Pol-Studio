@@ -14,9 +14,9 @@ SERVICIOS
 
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 
-    gap: 30px;
+    gap: 25px;
 
 }
 
@@ -26,13 +26,7 @@ SERVICIOS
 
     overflow: hidden;
 
-    border-radius: 18px;
-
     cursor: pointer;
-
-    aspect-ratio: 3/5;
-
-    border: 1px solid rgba(200, 155, 77, .2);
 
     transition: .35s ease;
 
@@ -64,7 +58,7 @@ SERVICIOS
 
     padding: 35px;
 
-    background: linear-gradient(transparent, rgba(0, 0, 0, .9));
+
 
     transition: .4s;
 
@@ -92,12 +86,12 @@ SERVICIOS
 
     transform: translateY(-8px);
 
-    border-color: var(--color-gold);
 
 }
 
 .servicio-card:hover img {
 
     transform: scale(1.05);
+    filter:brightness(1.08);
 
 }

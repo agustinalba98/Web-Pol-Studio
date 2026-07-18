@@ -129,3 +129,45 @@ window.addEventListener("scroll", () => {
     });
 
 });
+
+
+/*======================================
+        MENÚ RESPONSIVE
+======================================*/
+
+const menuToggle = document.querySelector(".menu-toggle");
+
+const menu = document.querySelector("header ul");
+
+const icono = menuToggle.querySelector("i");
+
+menuToggle.addEventListener("click",()=>{
+
+    menu.classList.toggle("activo");
+
+    if(menu.classList.contains("activo")){
+
+        icono.classList.remove("fa-bars");
+        icono.classList.add("fa-xmark");
+
+    }else{
+
+        icono.classList.remove("fa-xmark");
+        icono.classList.add("fa-bars");
+
+    }
+
+});
+
+document.querySelectorAll("header ul a").forEach(link=>{
+
+    link.addEventListener("click",()=>{
+
+        menu.classList.remove("activo");
+
+        icono.classList.remove("fa-xmark");
+        icono.classList.add("fa-bars");
+
+    });
+
+});

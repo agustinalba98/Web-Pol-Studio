@@ -1,0 +1,82 @@
+/*==================================
+            CONTACTO
+===================================*/
+
+.contacto{
+
+    padding:150px 10%;
+    background:var(--color-background);
+
+}
+
+.contacto-cards{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:40px;
+
+    margin-top:80px;
+
+}
+
+.contacto-card{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    text-decoration:none;
+
+    color:white;
+
+    transition:.35s ease;
+
+}
+
+.contacto-card i{
+
+    font-size:3.5rem;
+
+    color:var(--color-gold);
+
+    margin-bottom:25px;
+
+    transition:.35s ease;
+
+}
+
+.contacto-card h3{
+
+    font-size:1.2rem;
+
+    margin-bottom:10px;
+
+}
+
+.contacto-card span{
+
+    color:var(--color-text-secondary);
+
+    text-align:center;
+
+    transition:.35s ease;
+
+}
+
+.contacto-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.contacto-card:hover i{
+
+    transform:scale(1.15);
+
+}
+
+.contacto-card:hover span{
+
+    color:var(--color-gold);
+
+}

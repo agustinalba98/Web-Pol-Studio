@@ -1,0 +1,453 @@
+/* ==========================
+        RESPONSIVE
+========================== */
+
+@media (max-width:768px){
+
+/* ==========================
+        HEADER
+========================== */
+
+#header{
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    transform:none;
+
+    padding:15px 20px;
+
+}
+
+#header.activo{
+
+    transform:none;
+
+}
+
+nav{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0;
+
+    background:none;
+
+    border:none;
+
+    border-radius:0;
+
+    box-shadow:none;
+
+    backdrop-filter:none;
+
+}
+
+.logo img{
+
+    height:38px;
+
+}
+
+.menu-toggle{
+
+    display:block;
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:2rem;
+
+    cursor:pointer;
+
+    z-index:1002;
+
+}
+
+nav ul{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:40px;
+
+    background:#050505;
+
+    transform:translateX(100%);
+
+    transition:.35s;
+
+    z-index:1001;
+
+}
+
+nav ul.activo{
+
+    transform:translateX(0);
+
+}
+
+nav ul li{
+
+    list-style:none;
+
+}
+
+nav ul a{
+
+    font-size:1.6rem;
+
+}
+
+/* ==========================
+        OVERFLOW SAFETY
+========================== */
+
+html{
+
+    overflow-x:hidden;
+
+}
+
+/* ==========================
+        SECTION TITLES
+========================== */
+
+.titulo-seccion{
+
+    margin-bottom:40px;
+
+}
+
+.titulo-seccion span{
+
+    font-size:1.5rem;
+
+}
+
+.titulo-seccion h2{
+
+    font-size:1.8rem;
+
+    margin-top:12px;
+
+}
+
+/* ==========================
+        SCROLL INDICATOR
+========================== */
+
+.scroll-indicator{
+
+    display:none;
+
+}
+
+/* ==========================
+        HERO
+========================== */
+
+.hero{
+
+    height:100vh;
+    height:100dvh;
+
+}
+
+.video-fondo{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+}
+
+.contenido{
+
+    padding:0 24px;
+
+}
+
+.hero h1{
+
+    font-size:2rem;
+
+}
+
+.hero p{
+
+    font-size:1rem;
+
+}
+
+.subtitulo{
+
+    font-size:.75rem;
+    letter-spacing:4px;
+
+}
+
+.boton{
+
+    padding:14px 28px;
+    font-size:.85rem;
+
+}
+
+/* ==========================
+        INTRO
+========================== */
+
+.intro{
+
+    padding:60px 6%;
+
+}
+
+.intro img{
+
+    margin-bottom:35px;
+
+}
+
+.intro h1{
+
+    font-size:1.5rem;
+
+    padding:0;
+
+}
+
+/* ==========================
+        ABOUT
+========================== */
+
+.about{
+
+    padding:80px 6%;
+
+}
+
+.about-text h2{
+
+    font-size:2.2rem;
+
+}
+
+.about-text p{
+
+    font-size:1.2rem;
+
+}
+
+.about-text span{
+
+    font-size:1.2rem;
+
+}
+
+.about-container{
+
+    display:flex;
+
+    flex-direction:column;
+
+    text-align:center;
+
+    gap:60px;
+
+}
+
+/* ==========================
+        SERVICIOS
+========================== */
+
+.servicios{
+
+    padding:80px 6%;
+
+}
+
+.servicios-cards{
+
+    grid-template-columns:1fr;
+
+}
+
+/* ==========================
+        PRODUCCIONES
+========================== */
+
+.producciones{
+
+    padding:80px 6%;
+
+}
+
+.cards{
+
+    grid-template-columns:1fr;
+
+}
+
+/* ==========================
+        CONTACTO
+========================== */
+
+.contacto{
+
+    padding:80px 6%;
+
+}
+
+.contacto-cards{
+
+    grid-template-columns:1fr;
+
+}
+
+.contacto-card i{
+
+    font-size:2.5rem;
+
+    margin-bottom:18px;
+
+}
+
+/* ==========================
+        FOOTER
+========================== */
+
+.footer-logo{
+
+    width:140px;
+
+}
+
+.footer-frase{
+
+    font-size:1.3rem;
+
+}
+
+/* ==========================
+        PROCESO
+========================== */
+
+.proceso{
+
+    padding:80px 6%;
+
+}
+
+.proceso h3{
+
+    font-size:2rem;
+
+    margin-bottom:40px;
+
+}
+
+.proceso h4{
+
+    font-size:1.2rem;
+
+    margin-top:25px;
+
+}
+
+.proceso p{
+
+    font-size:1rem;
+
+}
+
+/* ==========================
+        CLIENTS
+========================== */
+
+.Clients{
+
+    padding:60px 6%;
+
+}
+
+.Clients h2{
+
+    font-size:1.4rem;
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+    color:var(--color-gold);
+
+    letter-spacing:3px;
+
+}
+
+.clientes-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+    place-items:center;
+
+}
+
+/* ==========================
+        MODAL
+========================== */
+
+.modal-contenido{
+
+    width:92%;
+
+}
+
+.cerrar-modal{
+
+    top:-42px;
+
+    right:0;
+
+    width:38px;
+
+    height:38px;
+
+    font-size:1.2rem;
+
+}
+
+.cerrar-modal:hover{
+
+    transform:rotate(90deg) scale(1.05);
+
+}
+
+}
+
+
