@@ -1,4 +1,29 @@
 /*======================================
+        HERO FADE OUT
+======================================*/
+
+setTimeout(() => {
+
+    const textoHero = document.querySelector(".hero-texto-fade");
+
+    if (textoHero) {
+
+        textoHero.classList.add("fade-out");
+
+    }
+
+    const botonHero = document.querySelector(".boton-hero");
+
+    if (botonHero) {
+
+        botonHero.classList.add("semi-visible");
+
+    }
+
+}, 5000);
+
+
+/*======================================
             HEADER
 ======================================*/
 
