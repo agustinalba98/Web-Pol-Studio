@@ -14,9 +14,49 @@ body{
 
     overflow-x:hidden;
 
-    cursor: url('../assets/img/frame-cursor.png'), auto;
+    cursor: none;
 
 }
+
+* {
+
+    cursor: none !important;
+
+}
+
+/* Custom Cursor */
+
+.custom-cursor {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    background: url('../assets/img/frame-cursor.png') center/contain no-repeat;
+    pointer-events: none;
+    z-index: 99999;
+    transition: width 0.4s ease, height 0.4s ease, filter 0.4s ease;
+    transform: translate(-50%, -50%);
+
+}
+
+.custom-cursor.foco {
+
+    width: 50px;
+    height: 50px;
+    animation: focusLock 0.4s ease forwards;
+
+}
+
+@keyframes focusLock {
+
+    0% { filter: blur(3px) brightness(0) invert(1) sepia(1) saturate(10) hue-rotate(85deg) drop-shadow(0 0 6px #39ff14) drop-shadow(0 0 12px #39ff14); }
+    100% { filter: blur(0px) brightness(0) invert(1) sepia(1) saturate(10) hue-rotate(85deg) drop-shadow(0 0 6px #39ff14) drop-shadow(0 0 12px #39ff14); }
+
+}
+
+
 
 img{
 
