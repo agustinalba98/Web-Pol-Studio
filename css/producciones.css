@@ -54,6 +54,8 @@ PRODUCCIONES
 
     border-radius: 18px;
 
+    background: #0a0a0a;
+
     cursor: pointer;
 
     aspect-ratio: 4/5;
@@ -152,6 +154,7 @@ PRODUCCIONES
     margin-top: 30px;
     border-radius: 18px;
     overflow: hidden;
+    background: #0a0a0a;
 
 }
 

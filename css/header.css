@@ -207,12 +207,15 @@ nav a:hover::after {
 
     display:flex;
     align-items:center;
+    flex-shrink:0;
 
 }
 
 .logo img{
 
     height:42px;
+    width:auto;
+    max-width:none;
     display:block;
 
 }

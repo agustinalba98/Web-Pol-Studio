@@ -28,17 +28,17 @@
 
             <div class="logo">
 
-                <img src="assets/img/logos/logo.png" alt="POL Studio">
+                <img src="assets/img/logos/logo.png" alt="POL Studio" width="1112" height="644">
 
             </div>
 
-            <button class="menu-toggle">
+            <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPrincipal">
 
                 <i class="fa-solid fa-bars"></i>
 
             </button>
 
-            <ul>
+            <ul id="menuPrincipal">
 
                 <li><a href="#hero">Inicio</a></li>
 
@@ -62,9 +62,9 @@
 
         <section id="hero" class="hero">
 
-            <video autoplay muted loop playsinline class="video-fondo">
+            <video autoplay muted loop playsinline class="video-fondo" poster="assets/img/posters/Hero.jpg">
 
-                <source src="assets/vid/video-hero.mp4" type="video/mp4">
+                <source src="assets/vid/video-hero-opt.mp4" type="video/mp4">
 
             </video>
 
@@ -106,10 +106,10 @@
 
         <section class="intro">
 
-            <img src="assets/img/Banner-1.png" alt="banner">
+            <img src="assets/img/Banner-1.png" alt="banner" width="1983" height="793" loading="lazy" decoding="async">
             <h1>TRANSFORMAMOS <span class="highlight">IDEAS</span> EN EXPERIENCIAS VISUALES QUE TOMAN FORMA A TRAVÉS DE
                 LA <span class="highlight">CREATIVIDAD</span>, LA <span class="highlight">ESTRATEGIA</span> Y LA <span
-                    class="highlight">PRODUCCION</span></h1>
+                    class="highlight">PRODUCCIÓN</span></h1>
         </section>
 
 
@@ -120,7 +120,7 @@
 
                 <div class="about-image">
 
-                    <img src="assets/img/NATURALEZA5.JPG" alt="Fotógrafo">
+                    <img src="assets/img/NATURALEZA5.JPG" alt="Fotógrafo" width="3456" height="5184" loading="lazy" decoding="async">
 
                 </div>
 
@@ -172,25 +172,25 @@
 
                 <article class="servicio-card">
 
-                    <img src="assets/img/SERVICIOS-1.png" alt="Servicio 1">
+                    <img src="assets/img/SERVICIOS-1.png" alt="Servicio 1" width="941" height="1672" loading="lazy" decoding="async">
 
                 </article>
 
                 <article class="servicio-card">
 
-                    <img src="assets/img/SERVICIOS-2.png" alt="Servicio 2">
+                    <img src="assets/img/SERVICIOS-2.png" alt="Servicio 2" width="941" height="1672" loading="lazy" decoding="async">
 
                 </article>
 
                 <article class="servicio-card">
 
-                    <img src="assets/img/SERVICIOS-3.png" alt="Servicio 3">
+                    <img src="assets/img/SERVICIOS-3.png" alt="Servicio 3" width="941" height="1672" loading="lazy" decoding="async">
 
                 </article>
 
                 <article class="servicio-card">
 
-                    <img src="assets/img/SERVICIOS-4.png" alt="Servicio 3">
+                    <img src="assets/img/SERVICIOS-4.png" alt="Servicio 4" width="941" height="1672" loading="lazy" decoding="async">
 
                 </article>
 
@@ -212,11 +212,11 @@
 
             <div class="cards">
 
-                <article class="card" data-video="assets/vid/full/naturaleza.webm">
+                <article class="card" data-video="assets/vid/full/Naturaleza.mp4">
 
-                    <video autoplay muted loop playsinline>
+                    <video muted loop playsinline preload="none" poster="assets/img/posters/Naturaleza.jpg">
 
-                        <source src="assets/vid/preview/naturaleza.webm" type="video/webm">
+                        <source data-src="assets/vid/preview/Naturaleza-720.mp4" type="video/mp4">
 
                     </video>
 
@@ -231,11 +231,11 @@
 
                 </article>
 
-                <article class="card" data-video="assets/vid/full/evento.mp4">
+                <article class="card" data-video="assets/vid/full/Evento.mp4">
 
-                    <video autoplay muted loop playsinline>
+                    <video muted loop playsinline preload="none" poster="assets/img/posters/Evento.jpg">
 
-                        <source src="assets/vid/preview/evento.mp4" type="video/mp4">
+                        <source data-src="assets/vid/preview/Evento-720.mp4" type="video/mp4">
 
                     </video>
 
@@ -249,11 +249,11 @@
 
                 </article>
 
-                <article class="card" data-video="assets/vid/full/urbano.mp4">
+                <article class="card" data-video="assets/vid/full/Urbano.mp4">
 
-                    <video autoplay muted loop playsinline>
+                    <video muted loop playsinline preload="none" poster="assets/img/posters/Urbano.jpg">
 
-                        <source src="assets/vid/preview/urbano.mp4" type="video/mp4">
+                        <source data-src="assets/vid/preview/Urbano-720.mp4" type="video/mp4">
 
                     </video>
 
@@ -271,9 +271,9 @@
 
             <div class="collage-video">
 
-                <video autoplay muted loop playsinline>
+                <video muted loop playsinline preload="none" poster="assets/img/posters/Collage.jpg">
 
-                    <source src="assets/vid/collage-loop.mp4" type="video/mp4">
+                    <source data-src="assets/vid/collage-loop-opt.mp4" type="video/mp4">
 
                 </video>
 
@@ -304,12 +304,12 @@
         <section id="clientes" class="Clients">
             <h2>Quienes confían en nosotros</h2>
             <div class="clientes-container">
-                <img src="assets/img/logos/isla bruma.png" alt="Isla Bruma">
-                <img src="assets/img/logos/remax.png" alt="RE/MAX">
-                <img src="assets/img/logos/piletas.PNG" alt="Piletas">
-                <img src="assets/img/logos/Victoria.png" alt="Victoria">
-                <img src="assets/img/logos/alejandra.PNG" alt="Alejandra">
-                <img src="assets/img/logos/mune-ink.PNG" alt="Alejandra">
+                <img src="assets/img/logos/isla bruma.png" alt="Isla Bruma" loading="lazy" decoding="async">
+                <img src="assets/img/logos/remax.png" alt="RE/MAX" loading="lazy" decoding="async">
+                <img src="assets/img/logos/piletas.PNG" alt="Piletas" loading="lazy" decoding="async">
+                <img src="assets/img/logos/Victoria.png" alt="Victoria" loading="lazy" decoding="async">
+                <img src="assets/img/logos/alejandra.PNG" alt="Alejandra" loading="lazy" decoding="async">
+                <img src="assets/img/logos/mune-ink.png" alt="Mune Ink" loading="lazy" decoding="async">
             </div>
 
         </section>
@@ -330,7 +330,7 @@
 
             <div class="contacto-cards">
 
-                <a href="https://wa.me/5491130257075" target="_blank" class="contacto-card">
+                <a href="https://wa.me/5491130257075" target="_blank" rel="noopener noreferrer" class="contacto-card">
 
                     <i class="fa-brands fa-whatsapp"></i>
 
@@ -340,7 +340,7 @@
 
                 </a>
 
-                <a href="https://www.instagram.com/polstudio.ok/" target="_blank" class="contacto-card">
+                <a href="https://www.instagram.com/polstudio.ok/" target="_blank" rel="noopener noreferrer" class="contacto-card">
 
                     <i class="fa-brands fa-instagram"></i>
 
@@ -350,7 +350,7 @@
 
                 </a>
 
-                <a href=https://www.youtube.com/@PolStudiook/videos" target="_blank" class="contacto-card">
+                <a href="https://www.youtube.com/@PolStudiook/videos" target="_blank" rel="noopener noreferrer" class="contacto-card">
 
                     <i class="fa-brands fa-youtube"></i>
 
@@ -372,15 +372,17 @@
 
             </div>
 
+        </section>
+
     </main>
 
     <div class="modal-video" id="modalVideo">
 
         <div class="modal-contenido">
 
-            <button class="cerrar-modal">&times;</button>
+            <button class="cerrar-modal" type="button" aria-label="Cerrar video">&times;</button>
 
-            <video id="videoCompleto" controls playsinline></video>
+            <video id="videoCompleto" controls playsinline preload="none"></video>
 
         </div>
 
@@ -390,7 +392,7 @@
 
         <div class="footer-container">
 
-            <img src="assets/img/logos/logo.png" alt="POL Studio" class="footer-logo">
+            <img src="assets/img/logos/logo.png" alt="POL Studio" class="footer-logo" width="1112" height="644" loading="lazy" decoding="async">
 
             <p class="footer-frase">
 
