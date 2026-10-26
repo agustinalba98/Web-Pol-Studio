@@ -48,6 +48,8 @@
 
                 <li><a href="#producciones">Portfolio</a></li>
 
+                <li><a href="#recursos">Recursos</a></li>
+
                 <li><a href="#contacto">Contacto</a></li>
 
             </ul>
@@ -314,6 +316,46 @@
 
         </section>
 
+        <section id="recursos" class="recursos">
+
+            <div class="recursos-encabezado">
+                <div class="recursos-titulo">
+                    <span class="recursos-etiqueta">EL LABORATORIO CREATIVO DE POL STUDIO</span>
+                    <h2>RECURSOS</h2>
+                    <p>Herramientas gratuitas para llevar tus fotos y videos un poco más lejos. Nuevos recursos, ideas y tutoriales cada semana.</p>
+                </div>
+                <a class="recursos-suscripcion-link" href="#newsletter">Recibí las novedades <i class="fa-solid fa-arrow-down"></i></a>
+            </div>
+
+            <div class="recursos-grid" id="recursosGrid" aria-live="polite" aria-busy="true">
+                <article class="recurso-card recurso-card-destacado">
+                    <div class="recurso-vista recurso-vista-marco" aria-hidden="true"><span>YOUR<br>FRAME</span><i>POL STUDIO · 01</i></div>
+                    <div class="recurso-info"><span class="recurso-tipo">OVERLAY · SVG</span><h3>Marco editorial</h3><p>Un marco limpio para sumar una firma editorial a tus fotos. Editable y con fondo transparente.</p><a href="assets/recursos/marco-editorial.svg" download>Descargar gratis <i class="fa-solid fa-download"></i></a></div>
+                </article>
+                <article class="recurso-card">
+                    <div class="recurso-vista recurso-vista-luz" aria-hidden="true"><span>01 / GOLDEN HOUR</span></div>
+                    <div class="recurso-info"><span class="recurso-tipo">OVERLAY · SVG</span><h3>Luz de atardecer</h3><p>Un resplandor cálido y sutil para combinar con tus imágenes en capas.</p><a href="assets/recursos/luz-atardecer.svg" download>Descargar gratis <i class="fa-solid fa-download"></i></a></div>
+                </article>
+                <article class="recurso-card">
+                    <div class="recurso-vista recurso-vista-grano" aria-hidden="true"><span>TEXTURA 03</span></div>
+                    <div class="recurso-info"><span class="recurso-tipo">TEXTURA · SVG</span><h3>Grano analógico</h3><p>Textura transparente para darle carácter y una sensación de película a tus piezas.</p><a href="assets/recursos/grano-analogico.svg" download>Descargar gratis <i class="fa-solid fa-download"></i></a></div>
+                </article>
+            </div>
+
+            <div class="recursos-temas" id="recursosFiltros" role="group" aria-label="Filtrar recursos por categoría">
+                <button type="button" class="recurso-filtro activo" data-filter="all" aria-pressed="true">Todos</button>
+            </div>
+            <p class="recursos-estado" id="recursosEstado" role="status" aria-live="polite"></p>
+
+            <div class="newsletter" id="newsletter">
+                <div class="newsletter-copy"><span class="recursos-etiqueta">UNA NOTA CUANDO HAY ALGO NUEVO</span><h3>Ideas frescas,<br>directo a tu inbox.</h3><p>Dejanos tu email para recibir novedades de recursos y tutoriales. Confirmá la suscripción desde el correo que te envíe Brevo. Sin ruido, solo novedades de POL Studio.</p></div>
+                <div class="newsletter-form" id="newsletterEmbed" data-brevo-form-url="https://17cf8c97.sibforms.com/v2/serve/MUIFAI3y06uDErLk1kbe2yzv-bCBarY4xLFsPBX6zAe7YLbnoePJe5azEuBGZdEGgCIhDUEh5X-adlY8n1eIcDu1bK_boaD07oRbWk8FFZ225k0Kck-1rLEIBE_a1H_yIt3haRxQ1shlz4JYulO-GF-ISyJeSb2I4sdMRZatONd6evc475ot8S1ua23M2WCsCH-BN23o7DzPoUKhoA==" data-brevo-form-height="600">
+                    <p class="newsletter-configuracion" id="newsletterMessage" role="status" aria-live="polite">El formulario se habilitará cuando conectemos el formulario de suscripción de Brevo.</p>
+                </div>
+            </div>
+
+        </section>
+
         <section id="contacto" class="contacto">
 
             <div class="titulo-seccion">
@@ -414,6 +456,8 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/recursos.js"></script>
+    <script src="js/newsletter.js"></script>
 
 </body>
 

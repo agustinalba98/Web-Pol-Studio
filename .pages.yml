@@ -1,0 +1,109 @@
+media:
+  - name: resource_covers
+    label: Portadas de recursos
+    input: assets/recursos/portadas
+    output: assets/recursos/portadas
+    extensions: [jpg, jpeg, png, webp]
+    categories: [image]
+    rename: safe
+
+content:
+  - name: recursos
+    label: Recursos descargables
+    type: file
+    path: content/recursos.json
+    format: json
+    list: true
+    operations:
+      rename: false
+      delete: false
+    fields:
+      - name: slug
+        label: Identificador corto
+        type: string
+        required: true
+        description: Usá letras minúsculas, números y guiones. Debe ser único.
+        pattern:
+          regex: "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          message: Usá letras minúsculas, números y guiones.
+      - name: title
+        label: Título
+        type: string
+        required: true
+      - name: description
+        label: Descripción
+        type: text
+        required: true
+      - name: category
+        label: Categoría
+        type: select
+        required: true
+        options:
+          values:
+            - name: tipografias
+              label: Tipografías
+            - name: presets
+              label: Presets
+            - name: overlays
+              label: Overlays
+            - name: recursos
+              label: Otros recursos
+            - name: tutoriales
+              label: Tutoriales
+            - name: novedades
+              label: Novedades
+      - name: cover_image
+        label: Imagen de portada
+        type: image
+        options:
+          media: resource_covers
+          path: assets/recursos/portadas
+          extensions: [jpg, jpeg, png, webp]
+          rename: safe
+      - name: date
+        label: Fecha de publicación
+        type: date
+        default: ""
+        options:
+          format: yyyy-MM-dd
+      - name: published
+        label: Publicado
+        type: boolean
+        default: true
+        description: Desactivado oculta el recurso del catálogo; no convierte el archivo JSON en privado.
+      - name: download_type
+        label: Tipo de descarga
+        type: select
+        required: true
+        options:
+          values:
+            - name: local
+              label: Archivo alojado en el sitio
+            - name: external
+              label: Enlace externo seguro (HTTPS)
+            - name: none
+              label: Sin descarga (por ejemplo, tutorial o novedad)
+      - name: local_path
+        label: Ruta del archivo local
+        type: string
+        description: Ruta relativa desde la raíz del sitio, por ejemplo assets/recursos/mi-recurso.zip. No subas ZIP grandes al repositorio.
+      - name: external_url
+        label: URL externa
+        type: string
+        description: Pegá un enlace público HTTPS, por ejemplo un enlace compartido de Google Drive.
+        pattern:
+          regex: "^https://.+"
+          message: El enlace debe comenzar con https://
+      - name: button_label
+        label: Texto del botón de descarga
+        type: string
+        default: Descargar gratis
+        description: Para los recursos sin descarga, dejalo vacío.
+
+settings:
+  commit:
+    identity: app
+    templates:
+      create: "Crear recurso: {path}"
+      update: "Actualizar recurso: {path}"
+      delete: "Eliminar recurso: {path}"

@@ -1,0 +1,41 @@
+[
+  {
+    "slug": "marco-editorial",
+    "title": "Marco editorial",
+    "description": "Un marco limpio para sumar una firma editorial a tus fotos. Editable y con fondo transparente.",
+    "category": "overlays",
+    "cover_image": "",
+    "date": "",
+    "published": true,
+    "download_type": "local",
+    "local_path": "assets/recursos/marco-editorial.svg",
+    "external_url": "",
+    "button_label": "Descargar gratis"
+  },
+  {
+    "slug": "luz-de-atardecer",
+    "title": "Luz de atardecer",
+    "description": "Un resplandor cálido y sutil para combinar con tus imágenes en capas.",
+    "category": "overlays",
+    "cover_image": "",
+    "date": "",
+    "published": true,
+    "download_type": "local",
+    "local_path": "assets/recursos/luz-atardecer.svg",
+    "external_url": "",
+    "button_label": "Descargar gratis"
+  },
+  {
+    "slug": "grano-analogico",
+    "title": "Grano analógico",
+    "description": "Textura transparente para darle carácter y una sensación de película a tus piezas.",
+    "category": "overlays",
+    "cover_image": "",
+    "date": "",
+    "published": true,
+    "download_type": "local",
+    "local_path": "assets/recursos/grano-analogico.svg",
+    "external_url": "",
+    "button_label": "Descargar gratis"
+  }
+]

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2000" viewBox="0 0 1600 2000">
+  <title>Marco editorial transparente para fotografía</title>
+  <g fill="none" stroke="#fff" stroke-opacity=".9">
+    <rect x="64" y="64" width="1472" height="1872" stroke-width="3"/>
+    <path d="M64 1740h1472" stroke-width="2"/>
+  </g>
+  <g fill="#fff" font-family="Arial,sans-serif">
+    <text x="100" y="1815" font-size="31" letter-spacing="9">YOUR FRAME / YOUR STORY</text>
+    <text x="100" y="1880" font-size="19" letter-spacing="5" opacity=".75">POL STUDIO · VISUAL RESOURCES</text>
+    <text x="1495" y="1880" text-anchor="end" font-size="19" letter-spacing="3" opacity=".75">01 — 25</text>
+  </g>
+</svg>
